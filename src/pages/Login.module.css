@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #232323;
+    background-size: cover; /* ← Esto arregla la distorsión */
+    background-position: center; /* ← Centra la imagen */
+    background-repeat: no-repeat; /* ← Evita que se repita */
+
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 50vh;
+    height: 70vh;
+    max-width: 400px;
+    font-family: "Comic Sans MS";
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background: #232323;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Comic Sans MS';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
