@@ -1,11 +1,26 @@
+
 import styles from './Dashboard.module.css';
-function Dashboard(): JSX.Element {
+import logo from '../assets/gato-negro.png';
+
+import { ItemCard } from '../components/ItemCard';
+
+export function Dashboard(): JSX.Element {
+
+
     return (
-       <div className={styles.upper_div}>
+        <div>
+            {/* Header */}
+            <div className={styles.upper_div}>
+                <img src={logo} className={styles.logo} alt="Logo" />
+                <span className={styles.title}>Mi Dashboard</span>
+            </div>
 
-
-       </div>
+            {/* Contenedor de ItemCards */}
+            <div className={styles.dashboard_container}>
+                <ItemCard title="Salchipapa" content="No sé" />
+                <ItemCard title="Hamburguesa" content="Con queso" />
+                <ItemCard title="Pizza" content="Con extra queso" />
+            </div>
+        </div>
     );
 }
-
-export default Dashboard;

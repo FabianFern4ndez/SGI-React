@@ -6,7 +6,7 @@ interface LoginProps {
     onLogin: () => void;
 }
 
-function Login({ onLogin }: LoginProps): JSX.Element {
+export function Login({ onLogin }: LoginProps): JSX.Element {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -65,4 +65,3 @@ function Login({ onLogin }: LoginProps): JSX.Element {
     );
 }
 
-export default Login;

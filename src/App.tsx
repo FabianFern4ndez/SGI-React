@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+//import { useState } from 'react';
+//import Login from './pages/Login';
+import {Dashboard} from './pages/Dashboard';
 
-function App() {
+export function App() {
     /*const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
@@ -15,6 +15,5 @@ function App() {
     return (<Dashboard />)
 }
 
-export default App;
 //npm run dev
 //ctrl shift i
